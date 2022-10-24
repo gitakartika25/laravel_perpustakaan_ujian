@@ -98,7 +98,7 @@
               </a>
             </div>
           </li>
-          <li class="nav-item nav-profile dropdown">
+          {{-- <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{ asset('template/images/faces/face28.jpg') }}" alt="profile"/>
             </a>
@@ -118,9 +118,9 @@
               {{-- <a class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
                 Logout
-              </a> --}}
+              </a> 
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item nav-settings d-none d-lg-flex">
             <a class="nav-link" href="#">
               <i class="icon-ellipsis"></i>
@@ -325,11 +325,11 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{ url('product') }}">Products</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{ url('category') }}">Categories</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Orders In</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Orders</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Report</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('buku') }}">Daftar Buku</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('peminjaman') }}">Peminjaman</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('pengembalian') }}">Pengembalian</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('detailpeminjaman') }}">Detail Peminjaman</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('detailpengembalian') }}">Detail Pengembalian</a></li>
               </ul>
             </div>
           </li>
@@ -389,8 +389,9 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{ asset('template/pages/samples/login.html') }}"> Employees</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{ asset('template/pages/samples/register.html') }}"> Members </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ asset('template/pages/samples/login.html') }}">Petugas</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ asset('template/pages/samples/register.html') }}">Siswa</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ asset('template/pages/samples/register.html') }}">Kelas</a></li>
               </ul>
             </div>
           </li>
